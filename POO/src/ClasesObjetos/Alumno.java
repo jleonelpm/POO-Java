@@ -25,9 +25,7 @@ public class Alumno {
     int c2;
     int c3;
     
-    //Métodos 
-    
-    //método que no retorna valores
+    //Métodos     
     public void saludar(){
         System.out.println("Hola a todos");
     }
@@ -45,11 +43,4 @@ public class Alumno {
         return promedio;
     }
     
-    public boolean determinarMayoriaEdad(int edad){
-        if (edad >= 18) {
-            return true;
-        }else{
-            return false;
-        }
-    }
 }

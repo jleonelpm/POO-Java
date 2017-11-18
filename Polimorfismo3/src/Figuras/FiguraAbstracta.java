@@ -9,7 +9,7 @@ package Figuras;
  *
  * @author personal
  */
-public abstract class FiguraAbstracta implements Figura {
+public abstract class FiguraAbstracta {
     
     private String nombre;
     private String color;
@@ -29,5 +29,8 @@ public abstract class FiguraAbstracta implements Figura {
     public void setColor(String color) {
         this.color = color;
     }
+    
+    public abstract double calcularArea();
+    public abstract double calcularPerimetro();
     
 }

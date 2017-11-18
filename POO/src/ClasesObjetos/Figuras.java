@@ -23,11 +23,11 @@ public class Figuras {
     public Figuras(String t){
 
         switch (t) {
-            case "1":
+            case "C":
                 System.out.println("NUEVO CUADRADO"); break;
-            case "2":
+            case "R":
                 System.out.println("NUEVO RECTANGULO"); break;
-            case "3":
+            case "T":
                 System.out.println("NUEVO TRIANGULO"); break;
         }          
     }
@@ -49,17 +49,16 @@ public class Figuras {
     public double calcularArea(double lado1, double lado2){
         double area;
         area = lado1 * lado2;
-        return area;
-        
+        return area;        
     }
     
     //Método sobrecargado
     public double calcularArea(double lado1, double lado2, String figura){
         double area;
-        if (figura == "triangulo"){
+        if (figura == "T"){
             area = lado1 * lado2 / 2;
         }else{
-            area = lado1 * lado2;
+            area = calcularArea(lado1, lado2);
         }
         return area;
     }
